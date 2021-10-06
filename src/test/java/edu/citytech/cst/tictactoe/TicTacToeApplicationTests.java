@@ -25,7 +25,7 @@ class TicTacToeApplicationTests {
 	@Test
 	@DisplayName("check numbers")
 	void e02(){
-		String moves = "XNNOXOXNX";
+		String moves = "XNNNNNNNN";
 		//data[0]!="N" &&
 		//&& data[0]==data[8]
 
@@ -54,7 +54,7 @@ class TicTacToeApplicationTests {
 	}
 	public static boolean checkMoves (int p1, int p2, int p3, String[] data){
 		boolean result;
-		if (data[0].equals(data[1]) && data[0].equals(data[3]) && !data[p1].equals("N")){
+		if (data[p1].equals(data[p2]) && data[p1].equals(data[p3]) && !data[p1].equals("N")){
 			result = true;
 		}else {
 			result = false;
