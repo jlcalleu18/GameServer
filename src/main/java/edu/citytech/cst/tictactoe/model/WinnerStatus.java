@@ -1,9 +1,11 @@
 package edu.citytech.cst.tictactoe.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Arrays;
 
 public class WinnerStatus {
-    private boolean winner;
+    private boolean isWinner;
     private int[] position;
     private String whoWon;
 
@@ -11,18 +13,18 @@ public class WinnerStatus {
 
     }
 
-    public WinnerStatus(boolean winner, int[] position, String whoWon) {
-        this.winner = winner;
+    public WinnerStatus(boolean isWinner, int[] position, String whoWon) {
+        this.isWinner = isWinner;
         this.position = position;
         this.whoWon = whoWon;
     }
-
+    @JsonProperty("isWinner")
     public boolean isWinner() {
-        return winner;
+        return isWinner;
     }
-
+    @JsonProperty("isWinner")
     public void setWinner(boolean winner) {
-        this.winner = winner;
+        isWinner = winner;
     }
 
     public int[] getPosition() {
@@ -44,7 +46,7 @@ public class WinnerStatus {
     @Override
     public String toString() {
         return "WinnerStatus{" +
-                "winner=" + winner +
+                "isWinner=" + isWinner +
                 ", position=" + Arrays.toString(position) +
                 ", whoWon='" + whoWon + '\'' +
                 '}';
