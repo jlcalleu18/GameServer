@@ -1,6 +1,5 @@
 package edu.citytech.cst.tictactoe;
 
-import edu.citytech.cst.tictactoe.businessobject.Winner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,6 +11,7 @@ class TicTacToeApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+
 	@Test
 	@DisplayName("For Loop.....Standard code vs Functional code")
 	void e01(){
@@ -26,26 +26,26 @@ class TicTacToeApplicationTests {
 	@DisplayName("check numbers")
 	void e02(){
 		String moves = "XNNNNNNNN";
-		//data[0]!="N" &&
-		//&& data[0]==data[8]
+
 
 		String data[] = moves.split("");
 
-		if(checkMoves(0,1,2, data)){
+
+		if(data[0].equals(data[1]) && data[0].equals(data[2]) && !data[0].equals("N")){
 			System.out.println("Winner Found");
-		}else if(checkMoves(3,4,5, data)){
+		}else if(data[3].equals(data[4]) && data[3].equals(data[5]) && !data[3].equals("N")){
 			System.out.println("Winner Found");
-		}else if(checkMoves(6,7,8, data)){
+		}else if(data[6].equals(data[7]) && data[6].equals(data[8]) && !data[6].equals("N")){
 			System.out.println("Winner Found");
-		}else if(checkMoves(0,3,6, data)){
+		}else if(data[0].equals(data[3]) && data[0].equals(data[2]) && !data[0].equals("N")){
 			System.out.println("Winner Found");
-		}else if(checkMoves(1,4,7, data)){
+		}else if(data[0].equals(data[1]) && data[0].equals(data[2]) && !data[0].equals("N")){
 			System.out.println("Winner Found");
-		}else if(checkMoves(2,5,8, data)){
+		}else if(data[0].equals(data[1]) && data[0].equals(data[2]) && !data[0].equals("N")){
 			System.out.println("Winner Found");
-		}else if(checkMoves(0,4,8, data)){
+		}else if(data[0].equals(data[1]) && data[0].equals(data[2]) && !data[0].equals("N")){
 			System.out.println("Winner Found");
-		}else if(checkMoves(2,4,8, data)){
+		}else if(data[0].equals(data[1]) && data[0].equals(data[2]) && !data[0].equals("N")){
 			System.out.println("Winner Found");
 		}else {
 			System.out.println("Winner Not Found");

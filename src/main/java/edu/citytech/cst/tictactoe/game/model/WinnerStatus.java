@@ -1,4 +1,4 @@
-package edu.citytech.cst.tictactoe.model;
+package edu.citytech.cst.tictactoe.game.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

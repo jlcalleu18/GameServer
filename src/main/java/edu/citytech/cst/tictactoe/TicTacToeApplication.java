@@ -13,5 +13,8 @@ public class TicTacToeApplication {
 		app.setDefaultProperties(Collections
 				.singletonMap("server.port", "9615"));
 		app.run(args);
+
+//			SpringApplication.run(TicTacToeApplication.class, args);
+
 	}
 }
