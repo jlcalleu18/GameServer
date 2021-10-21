@@ -37,15 +37,22 @@
 			</plugin>
 		</plugins>
 
-	<finalName>calle-independent-server</finalName>
+	<finalName>calle-game-microserver</finalName>
 	<resources>
 		<resource>
 			<directory>src/main/java</directory>
 			<filtering>true</filtering>
 			<includes>
 				<include>**/*.java</include>
-				<include>**/*.fxml</include>
-				<include>**/*.css</include>
+				<include>**/*.txt</include>
+			</includes>
+		</resource>
+		<resource>
+			<directory>src/main/resources</directory>
+			<filtering>true</filtering>
+			<includes>
+				<include>**/*.properties</include>
+				<include>**/*.txt</include>
 			</includes>
 		</resource>
 	</resources>
