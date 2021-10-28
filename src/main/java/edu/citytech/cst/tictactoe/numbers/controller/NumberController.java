@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/numbers")
 public class NumberController {
     @GetMapping("/123")
-    public int[] count123(@RequestParam (defaultValue = "26")int limit){
+    public int[] count123(@RequestParam (defaultValue = "100")int limit){
 
         return NumberService.get123(limit);
     }

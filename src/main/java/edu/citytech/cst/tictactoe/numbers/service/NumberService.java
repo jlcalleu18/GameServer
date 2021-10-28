@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 public class NumberService {
     public static int[] get123(int... limit){
-        int newLimit = 26;
+        int newLimit = 100;
         if (limit.length != 0)
             newLimit = limit[0];
 
