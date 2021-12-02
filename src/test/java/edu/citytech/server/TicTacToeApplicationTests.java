@@ -1,4 +1,4 @@
-package edu.citytech.cst.tictactoe;
+package edu.citytech.server;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

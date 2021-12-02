@@ -1,4 +1,4 @@
-package edu.citytech.cst.tictactoe;
+package edu.citytech.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

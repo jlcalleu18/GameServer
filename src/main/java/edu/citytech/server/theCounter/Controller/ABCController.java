@@ -1,7 +1,7 @@
-package edu.citytech.cst.tictactoe.theCounter.Controller;
+package edu.citytech.server.theCounter.Controller;
 
 
-import edu.citytech.cst.tictactoe.theCounter.service.ABCService;
+import edu.citytech.server.theCounter.service.ABCService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package edu.citytech.cst.tictactoe.theCounter.service;
+package edu.citytech.server.theCounter.service;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

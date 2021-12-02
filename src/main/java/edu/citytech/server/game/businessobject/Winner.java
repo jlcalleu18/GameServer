@@ -1,6 +1,6 @@
-package edu.citytech.cst.tictactoe.game.businessobject;
+package edu.citytech.server.game.businessobject;
 
-import edu.citytech.cst.tictactoe.game.model.WinnerStatus;
+import edu.citytech.server.game.model.WinnerStatus;
 
 public class Winner {
     public WinnerStatus getWinnerStatus(String moves){
