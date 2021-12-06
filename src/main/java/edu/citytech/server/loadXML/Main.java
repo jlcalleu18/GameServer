@@ -1,19 +1,28 @@
 package edu.citytech.server.loadXML;
-import static edu.citytech.server.loadXML.XMLUtility.*;
+
+import edu.citytech.server.piechart.GroupByStateDAO;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        GroupByStateDAO.findAll().forEach(System.out::println);
+        //SelectProperties.findALl().forEach(System.out::println);
+    }
+    public static void loadDataFromXML() {
+        List<Property> propertyList = new ArrayList<>();
         XMLUtility.process("/Users/jorgecalle/data/properties.xml", "property", element -> {
+            var property = new Property(element);
+            propertyList.add(property);
+        });
+        PropertyInsert.process(propertyList);
+    }
+    public static void getXML() {
+        XMLUtility.process("/Users/jorgecalle/data/properties.xml", "property", element -> {
+            var properties = new Property(element);
+            System.out.println(properties);
 
-            String id = element.getAttribute("id");
-            float cost = getAttributeNumber(element, "cost");
-            float downPayment = getAttributeNumber(element, "downPayment");
-            String state = element.getAttribute("state");
-            float percentage = getAttributeNumber(element, "percentage");
-            float netIncome = getNumberContent(element);
-
-            System.out.format("id: %s cost: %s downPayment: %s state: %s percentage: %s netIncome: %s \n"
-                                ,id, cost, downPayment, state, percentage, netIncome);
         });
     }
 }

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.citytech.cst</groupId>
-	<artifactId>TicTacToe</artifactId>
+	<artifactId>GameServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TicTacToe</name>
+	<name>GameServer</name>
 	<description>Game tic tac toe</description>
 	<properties>
 		<java.version>16</java.version>
@@ -27,6 +27,21 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<version>10.14.2.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derbyclient</artifactId>
+			<version>10.13.1.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
