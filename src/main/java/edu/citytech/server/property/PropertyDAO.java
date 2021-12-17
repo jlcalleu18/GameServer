@@ -1,12 +1,14 @@
-package edu.citytech.server.loadXML;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
+package edu.citytech.server.property;
+
+import edu.citytech.server.loadXML.Property;
+import edu.citytech.server.loadXML.SQLExecutable;
+import edu.citytech.server.loadXML.SQLUtility;
+
 import java.util.List;
 
-import static edu.citytech.server.loadXML.DBConnection.*;
+import static edu.citytech.server.loadXML.DBConnection.getConnection;
 
-public class SelectProperties {
+public class PropertyDAO {
     //dynamic code
     final static String sql = "SELECT * FROM Properties";
     public static List<Property> findAll() {

@@ -8,7 +8,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         GroupByStateDAO.findAll().forEach(System.out::println);
-        //SelectProperties.findALl().forEach(System.out::println);
+        //SelectProperties.findAll().forEach(System.out::println);
+        //loadDataFromXML();
+        //getXML();
     }
     public static void loadDataFromXML() {
         List<Property> propertyList = new ArrayList<>();

@@ -7,7 +7,7 @@ import java.util.List;
 import java.sql.Connection;
 
 public class SQLUtility {
-    public static <T> List<T> findALl(String sql, Connection pConn, SQLExecutable<T> sqlExecutable) {
+    public static <T> List<T> findAll(String sql, Connection pConn, SQLExecutable<T> sqlExecutable) {
 //        String sql = "SELECT * FROM Properties";
         try(var conn = pConn;
             PreparedStatement ps = conn.prepareStatement(sql);

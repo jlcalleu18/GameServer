@@ -25,7 +25,7 @@ public class GroupByStateDAO {
 
             return groupByState;
         };
-        List<GroupByState> list = SQLUtility.findALl(sql, getConnection(), exec);
+        List<GroupByState> list = SQLUtility.findAll(sql,getConnection(),exec);
         return list;
     }
 }

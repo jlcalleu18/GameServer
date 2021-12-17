@@ -8,6 +8,8 @@ public class PropertyInsert {
             INSERT INTO Properties(id, cost, downPayment, state, percentage, netIncome)
             VALUES (?, ?, ?, ?, ?, ?)
             """;
+
+
     public static  void process(List<Property> propertyList){
         try(var conn = DBConnection.getConnection();
             var ps = conn.prepareStatement(SQL_INSERT)

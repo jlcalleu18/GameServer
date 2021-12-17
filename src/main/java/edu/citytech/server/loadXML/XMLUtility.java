@@ -19,7 +19,8 @@ public class XMLUtility {
     public static float getNumberContent(Element element){
         return Float.parseFloat(element.getTextContent());
     }
-  public static void process (String fileName, String tagName, Consumer<Element> consumer) {
+
+    public static void process (String fileName, String tagName, Consumer<Element> consumer) {
 
       // Instantiate the Factory
       DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
