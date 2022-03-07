@@ -6,7 +6,7 @@
 * [JUnit5](https://junit.org/junit5/docs/current/user-guide/) - Testing Framework
 * [Spring boot](https://spring.io/projects/spring-boot) - Microservice
 
-# Dependencies 💥
+# Dependencies 
 ```
 <dependencies>
   <dependency>
@@ -36,7 +36,7 @@
   </dependency>
  </dependencies>
 ```
-# Derby Connection 💥
+# Derby Connection 
     public static Connection getConnection(){
         String dbURL = "jdbc:derby://localhost:1527/data/realEstate2021;create=true;user=realEstate;password=pwd1234";
         Connection conn = null;
